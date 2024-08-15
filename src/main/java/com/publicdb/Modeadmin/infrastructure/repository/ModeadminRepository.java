@@ -10,6 +10,13 @@ import com.publicdb.Modeadmin.domain.service.ModeadminService;
 import java.util.Properties;
 import java.sql.*;
 import java.util.Optional;
+import java.text.*;
+import java.util.*;
+import com.mysql.cj.xdevapi.Statement;
+import java.util.Properties;
+
+import com.publicdb.Modeadmin.domain.entity.Modeadmin;
+import com.publicdb.Modeadmin.domain.service.*;
 
 public class ModeadminRepository implements ModeadminService {
     private Connection connection;
@@ -28,7 +35,7 @@ public class ModeadminRepository implements ModeadminService {
     }
 
     @Override
-    public void createModeadmin(com.publicdb.Modeadmin.domain.entity.Modeadmin modeadmin) {
+    public void createModeadmin(Modeadmin modeadmin) {
         String sql = "INSERT INTO modeadministration (descriptionmode) VALUES (?)";
         
         try (PreparableStatement statement = connection.prepareStatement(sql, PreparableStatement.RETURN_GENERATED_KEYS)) {

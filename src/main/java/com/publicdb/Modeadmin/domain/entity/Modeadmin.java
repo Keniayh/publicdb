@@ -3,8 +3,10 @@ package com.publicdb.Modeadmin.domain.entity;
 public class Modeadmin {
     private int id;
     private String descriptionmode;
+
     public Modeadmin() {
     }
+    
     public Modeadmin(int id, String descriptionmode) {
         this.id = id;
         this.descriptionmode = descriptionmode;
