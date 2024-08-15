@@ -1,7 +1,11 @@
 package com.publicdb;
 
+import com.publicdb.Modeadmin.infrastructure.controller.ModeadminController;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        ModeadminController consoleAdapter = new ModeadminController();
+
+        consoleAdapter.findModeadmin();
     }
 }

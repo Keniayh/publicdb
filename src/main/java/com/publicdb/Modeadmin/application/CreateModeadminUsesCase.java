@@ -1,4 +1,4 @@
-package com.publicdb.Modeadmin.infrastructure.repository;
+package com.publicdb.Modeadmin.application;
 
 import com.publicdb.Modeadmin.domain.entity.Modeadmin;
 import com.publicdb.Modeadmin.domain.service.Modeadminservice;
